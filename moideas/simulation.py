@@ -1,10 +1,10 @@
 from dataclasses import dataclass
 from typing import NamedTuple, Optional
 import numpy as np
-from agent import Agent, NetworkMember
-from network import Network
 
-from proposition import *
+from .agent import Agent, NetworkMember
+from .network import Network
+from .proposition import *
 
 
 class SimulationConfiguration(NamedTuple):

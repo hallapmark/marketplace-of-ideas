@@ -1,0 +1,37 @@
+[project]
+name = "marketplace-of-ideas"
+readme = "README.md"
+description = "Package to simulate the philosophical assumptions of the theory of a free marketplace of ideas in the vein of JS Mill, and the effects of misinformation on this system."
+authors = [
+    {name = "Mark Hallap", email="hallapmark@gmail.com"},
+]
+license = {file = "LICENSE.txt"}
+requires-python = "~=3.10"
+keywords = [
+    "mill", "simulation", "free-speech", "misinformation"
+]
+classifiers = [
+    "Topic :: Scientific/Engineering",
+    "Intended Audience :: Science/Research"
+]
+dependencies = [
+    'tqdm',
+    'numpy'
+]
+dynamic = ["version"]
+
+[project.scripts]
+moi = "moideas.simulate_marketplace:main"
+
+[project.urls]
+repository = "https://github.com/hallapmark/marketplace-of-ideas/blob/main/simulate_marketplace.py"
+
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+
+[tool.setuptools_scm]

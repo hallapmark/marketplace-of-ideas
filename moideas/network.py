@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 import numpy as np
 
-from agent import NetworkMember, Agent
+from .agent import NetworkMember, Agent
 
 @dataclass
 class Network:

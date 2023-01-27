@@ -2,7 +2,7 @@ from abc import abstractmethod
 from dataclasses import dataclass
 from typing import Optional, Protocol, runtime_checkable
 
-from proposition import *
+from .proposition import *
 
 import numpy as np
 

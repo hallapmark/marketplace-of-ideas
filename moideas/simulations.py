@@ -5,7 +5,7 @@ import numpy as np
 from tqdm import tqdm
 from typing import NamedTuple
 
-from simulation import *
+from .simulation import *
 
 
 class ENResultsCSVWritableSummary(NamedTuple):
